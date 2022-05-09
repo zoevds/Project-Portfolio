@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+body {
+	background-color:#211b43;
+	font-family: "Poppins", sans-serif;
+    
+}
 .icons {
 	position: relative;
 	right: 9%;
