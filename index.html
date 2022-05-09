@@ -10,7 +10,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#sidenav">
+<body>
+<section data-bs-spy="scroll" data-bs-target="#sidenav">
     <!-- NAVBAR -->
   <header id="nav">
     <div id="sidenav">
@@ -21,7 +22,7 @@
       <!-- <br>
       <br> -->
       <header><img id="img1" src="./Zoe (3).jpg" alt="Zoe' Van Der Schyff" /></header>
-      <h1>Zoe' Van Der Schyff</h1>
+      <h1 class="text-light">Zoe' Van Der Schyff</h1>
       <ul>
         
 				<div class="icons">
@@ -42,64 +43,27 @@
       <!-- <br>
       <br> -->
       <div class="icon-bar">
-        <a class="active" href="#landing"><i class="fa-regular fa-house"></i>  Home</i></a>
-       <a href="#about"><i class="fa-regular fa-user"></i> About</i></a> 
-           <a href="#resume"><i class="fa-light fa-file"></i> Resume</i></a> 
-       <a href="#projects"><i class="fa-regular fa-bars-progress"></i>Projects  </i></a>
-       <a href="#testimonials"><i class="fa-regular fa-people-group"></i>Testimonials  </i></a>
-         <a href="#contact"><i class="fa-regular fa-phone"></i> Contact</i></a> 
+        <a class="active" href="#landing"><i class="fa-solid fa-house"></i> Home</i></a>
+       <a href="#about"><i class="fa-solid fa-user"></i> About</i></a> 
+           <a href="#resume"><i class="fa-solid fa-file"></i> Resume</i></a> 
+       <a href="#projects"><i class="fa-solid fa-bars-progress"></i>Projects  </i></a>
+       <a href="#testimonials"><i class="fa-solid fa-user-group"></i>Testimonials  </i></a>
+         <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</i></a> 
        </div>
        <footer>
-				<p>© Copyright Life Choices</p>
-				<p>Designed by Zoe' Van Der Schyff</p>
+				<p style="color: #211b43;">© Copyright Life Choices</p>
+				<p style="color: #211b43;">Designed by Zoe' Van Der Schyff</p>
 			</footer>
     </div>
     </ul>
  
     </nav>
-    <!-- <nav class="navbar navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Zoe'sFolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navbar</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#Landing">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#About">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Resume">RESUME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Projects">PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Testimonials">TESTIMONIALS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contact">CONTACT</a>
-          </li>
-          
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</nav> -->
-</header>  
+    
+</header> 
+</section> 
   <!-- LANDING -->
   <section id="landing">
+    
       <h1 style="font-size:40px"> Zoe'Van Der Schyff</h1>
       <h1 style="font-size: 20px">
         An Aspiring<span class="blink">
@@ -110,30 +74,56 @@
   </section>  
   <!-- ABOUT -->
   <section id="about">
-    <div class="p-3 mb-2 text-light">
-      <h1 id="head1" class="text-light">About Me</h1>
-      <p>This is a brief description of myself and what my interests are .</p>
+    
+    <div class="p-3 mb-2 text-light vh-100">
+      <h1 id="head1" class="text-light text-center text-decoration-underline">About Me</h1>
+      <p class="text-center">This is a brief description of myself and what my interests and skills are.</p>
       <div class="container">
-
+<div class="row justify-content-around">
+   <div class="col-4">
+      <img src="./Zoe (3).jpg" class="img-fluid" alt="Zoe' Van Der Schyff">
+    </div>
+    <div class="col-4">
+     <h2 class="fs-4">Aspriring Full Stack Developer</h2>
+    </div>
+</div>
       </div>
     </div>
       
   </section>  
-  <!-- RESUME -->
-  <section>
-       
+ <!-- SKILLS -->
+  <section id="skills">
+     <div class="p-3 mb-2 text-light vh-100">
+        <h1 id="head1" class="text-light text-center text-decoration-underline">Skills</h1>
+     </div>  
+  </section> 
+   <!-- RESUME --> 
+  <section id="resume">
+     <div class="p-3 mb-2 text-light vh-100">
+        <h1 id="head1" class="text-light text-center text-decoration-underline">Resume</h1>
+     </div>  
   </section>  
   <!-- PROJECTS -->
-  <section>
-      
-  </section>  
+  <section id="projects">
+      <div class="p-3 mb-2 text-light vh-100">
+         <h1 id="head1" class="text-light text-center text-decoration-underline">Projects</h1>
+      </div>
+  </section >  
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+      <div class="p-3 mb-2 text-light vh-100">
+         <h1 id="head1" class="text-light text-center text-decoration-underline">Testimonials</h1>
+      </div>
+  </section >  
   <!-- CONTACT -->
-  <section>
-       
+  <section id="contact">
+     <div class="p-3 mb-2 text-light vh-100">
+        <h1 id="head1" class="text-light text-center text-decoration-underline">About Me</h1>
+     </div>  
   </section>  
   <!-- FOOTER -->
-  <section>
-      
+  <section id="footer">
+     <div class="p-3 mb-2 text-light vh-100"></div> 
   </section>  
   <script src="https://kit.fontawesome.com/bccdf4f91d.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
