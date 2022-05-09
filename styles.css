@@ -59,13 +59,14 @@ h1 {
   align-items: center;
 }
 .icon-bar a {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-right: 22%;
   display: block;
   text-align: start;
-  padding: 20px;
-  color: white;
-  font-size: 12px;
+  padding: 8px;
+  color: #b15c70;
+  font-size: 15px;
 }
 .icons a:hover {
   background-color: #211b43;
@@ -158,7 +159,19 @@ main {
   justify-content: center;
   align-items: center;
 }
+#heading1 {
+  display: flex;
+  justify-content: end;
+}
 #about {
-  background-color: #211b43;
+  background-color: #693a66;
+  margin-left: 20%;
+}
+.img-fluid {
+  max-width: 100%;
+  height: 70%;
+}
+#skills {
+  background-color: #b15c70;
   margin-left: 20%;
 }
