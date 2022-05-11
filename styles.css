@@ -83,7 +83,7 @@ body {
   border: 10px #211b43;
 }
 h1 {
-  color: black;
+  color: #693a66;
   position: relative;
   left: 8%;
   font-size: large;
@@ -181,12 +181,13 @@ a {
   min-height: 100vh;
   font-family: "Times New Roman", Times, serif;
   display: flex;
-
   flex-wrap: nowrap;
-
-  /* justify-content: center; */
+  justify-content: center;
 }
-
+#heading-1 {
+  color: #01010c;
+  font-size: 40px;
+}
 #about {
   min-height: 100vh;
 }
@@ -338,6 +339,71 @@ ul {
 .main-timeline .timeline:nth-child(4n + 4) .timeline-content::before,
 .main-timeline .timeline:nth-child(4n + 4) .timeline-year {
   background-color: #00a8d7;
+}
+.cards {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 2em;
+  flex-direction: column;
+  padding: 2em;
+  width: 300px;
+}
+
+.card img {
+  object-fit: cover;
+  right: 100%;
+  max-width: 100%;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: #01010c;
+  border-radius: 0.75em;
+  border: 1px solid #ffffff90;
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.09),
+    0 5px 4px 1px rgba(0, 0, 0, 0.15), 0 7px 10px -3px rgba(0, 0, 0, 0.17),
+    0 10px 13px -4px rgba(0, 0, 0, 0.23), 0 16px 20px -4px rgba(0, 0, 0, 0.36);
+  overflow: hidden;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+}
+
+.card__image {
+  padding: 0.5em;
+  display: flex;
+}
+
+.card__content {
+  display: grid;
+  margin: 1em;
+  justify-content: center;
+}
+.card__title {
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.card__text {
+  max-width: 50ch;
+  color: rgba(255, 255, 255);
+  margin-bottom: 1em;
+}
+
+.card__readmore {
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  padding: 0.25em 1.15em;
+  border-radius: 0.6em;
+  width: max-content;
+  background: teal;
+  box-shadow: 0 1px 2px 0 #0003, 0 3px 7px 0 #0004, 0 8px 15px 0 #0005;
 }
 @media screen and (max-width: 767px) {
   .main-timeline .timeline,
