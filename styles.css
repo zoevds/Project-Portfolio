@@ -62,7 +62,10 @@ body {
   border-radius: 50%;
   border: 10px #817f94;
 }
-.fa-solid {
+.som {
+  color: white;
+}
+.social_links .fa-solid {
   padding: 1%;
   margin-left: -15%;
   font: 15px;
@@ -70,7 +73,7 @@ body {
 #img.image {
   width: 50%;
 }
-.content {
+#about .content {
   width: 50%;
 }
 #image1 {
@@ -148,7 +151,7 @@ footer {
 a {
   text-decoration: none;
 }
-.details {
+#about .details {
   margin-left: -80px;
   padding: 10px;
   width: 100%;
@@ -495,9 +498,9 @@ ul {
   text-transform: uppercase;
   margin: 0 0 20px;
 }
-.form-container .form {
+/* .form-container .form {
   font-size: 0;
-}
+} */
 .form-container .form .form-group {
   color: white;
   width: 50%;
@@ -512,7 +515,7 @@ ul {
   font-size: 17px;
   font-weight: 600;
 }
-.form-container .form-.form-control {
+/* .form-container .form-.form-control {
   color: #888;
   background: #fff;
   font-weight: 400;
@@ -522,56 +525,23 @@ ul {
   border-radius: 10px;
   border: 2px solid #e7e7e7;
   box-shadow: none;
-}
-.form-container .form.form-control:focus {
-  box-shadow: 0 0 5px #dcdcdc;
-}
-.form-container .form .check-terms {
-  padding: 0 8px;
-  margin: 0 0 25px;
-}
-.form-container .form .check-terms .check-label {
-  color: #333;
-  font-size: 14px;
-  font-weight: 500;
-  font-style: italic;
-  vertical-align: top;
-  display: inline-block;
-}
-.form-container .form .check-terms .checkbox {
-  height: 17px;
-  width: 17px;
-  min-height: auto;
-  margin: 2px 8px 0 0;
-  border: 2px solid #d9d9d9;
-  border-radius: 2px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  transition: all 0.3s ease 0s;
-}
-.form-container .form-horizontal .check-terms .checkbox:before {
-  content: "";
-  height: 5px;
-  width: 9px;
-  border-bottom: 2px solid #00a9ef;
-  border-left: 2px solid #00a9ef;
-  transform: rotate(-45deg);
-  position: absolute;
-  left: 2px;
-  top: 2.5px;
-  transition: all 0.3s ease;
-}
-
-/* .form-container .form-horizontal .btn:hover,
-.form-container .form-horizontal .btn:focus{
-  text-shadow: 0 0 5px rgba(0,0,0,0.5);
-  box-shadow: 3px 3px rgba(0,0,0,0.15),5px 5px rgba(0,0,0,0.1);
-  outline: none;
 } */
+/* .form-container .form.form-control:focus {
+  box-shadow: 0 0 5px #dcdcdc;
+} */
+.address {
+  height: fit-content;
+}
+.address h5 {
+  color: white;
+}
+.address h4 {
+  color: white;
+}
+.address i {
+  font-size: 30px;
+  color: white;
+}
 @media (min-width: 768px) {
   .col-md-6 {
     flex: 0 0 auto;
