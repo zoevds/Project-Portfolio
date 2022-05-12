@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&family=Ms+Madi&family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&family=Ms+Madi&family=Nunito:ital,wght@0,200;0,300;1,200;1,300&family=Water+Brush&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;700&family=Kaushan+Script&family=Ms+Madi&family=Nunito:ital,wght@0,200;0,300;1,200;1,300&family=Water+Brush&display=swap');
 </style>
   
   <link
@@ -29,7 +32,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="bg-secondary">
-
+<div class="particular" >
     <!-- NAVBAR -->
        <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
         <div class="content-nav">
@@ -89,14 +92,14 @@
   <section id="landing">
      <div >
     <h1 id="heading-1">Zoe' Van Der Schyff</h1>
-    <h2>Aspiring Full Stack Developer</h2>
+    <h2 id="heading_2">Aspiring Full Stack Developer</h2>
    </div>
   </section>  
   <!-- ABOUT -->
   
  <section id="about">
      <div class=" container  ">
-      <h1  class=" text-decoration-underline fs-2">About Me</h1>
+      <h1  class=" text-decoration-underline mb-2 fs-2">About Me</h1>
       <div class="abou-info">
       <div class="img-content">
       <img id="img.image" src="./Zoe (3).jpg" class="img-fluid" alt="Zoe' Van Der Schyff">
@@ -272,7 +275,7 @@
   </div>
   <div class="card">
     <div class="card__image d">
-      <img src="./restaurant-website.png">
+      <img  id="img.resta" src="./restaurant-website.png">
     </div>
     <div class="card__content">
       <div class="card__title">Restaurant Website</div>
@@ -293,7 +296,7 @@
       <div class="layer"></div>
       <div class="content">
        
-        <div class="image"><img src="./Fatima (1).jpg" alt="Fatima Galant"> 
+        <div class="image mb-3"><img src="./Fatima (1).jpg" alt="Fatima Galant"> 
         </div>
         <div class="details">
           <h2>Fatima Galant</h2> <span>Colleague</span>
@@ -307,13 +310,13 @@
       <div class="layer"></div>
       <div class="content">
        
-        <div class="image"><img src="./Carla (1).jpg" alt="Carla Lawrence"> 
+        <div class="image mb-3"><img src="./Carla (1).jpg" alt="Carla Lawrence"> 
         </div>
         <div class="details">
           <h2>Carla Lawrence</h2> <span>Colleague</span>
         </div>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+         <p>I would like to describe Zoe as being passionate about her work. 
+           She works hard and stays consistent in all areas and pursues her goals at all costs.</p>
              </div>
     </div>
     
@@ -321,7 +324,7 @@
       <div class="layer"></div>
       <div class="content">
        
-        <div class="image"><img src="./Natheerah (3).jpg" alt="Natheerah Abrahams"> 
+        <div class="image mb-3"><img src="./Natheerah (3).jpg" alt="Natheerah Abrahams"> 
         </div>
         <div class="details">
           <h2>Natheerah Abrahams</h2> <span>Colleague</span>
@@ -334,12 +337,26 @@
       <div class="layer"></div>
       <div class="content">
        
-        <div class="image"><img src="./Ashwin (3).jpg" alt="Ashwin Jacobs"> 
+        <div class="image mb-3"><img src="./Ashwin (3).jpg" alt="Ashwin Jacobs"> 
         </div>
         <div class="details">
           <h2>Ashwin Jacobs</h2> <span>Colleague</span>
         </div>
-         <p>Lorem sIpsum is simply dummy text of the printing and typesetting industry.
+         <p>I would like to formally recommend Zoë Van Der Schyff for her consistent work.
+She has the ability to complete tasks timelessly and effectively.
+</p>
+             </div>
+    </div>
+        <div class="card">
+      <div class="layer"></div>
+      <div class="content">
+       
+        <div class="image mb-3"><img src="./Raaid (4) (1).jpg" alt="Raaid"> 
+        </div>
+        <div class="details">
+          <h2>Raaid Abdulatief</h2> <span>Colleague</span>
+        </div>
+         <p>Lorem Ipsum   is simply dummy text of the printing and typesetting industry.
            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
              </div>
     </div>
@@ -347,10 +364,10 @@
       <div class="layer"></div>
       <div class="content">
        
-        <div class="image"><img src="" alt="Raaid"> 
+        <div class="image mb-3"><img src="" alt="Jason"> 
         </div>
         <div class="details">
-          <h2>Raaid Abdulatief</h2> <span>Colleague</span>
+          <h2>Jason Wandrag</h2> <span>Lecturer</span>
         </div>
          <p>Lorem Ipsum   is simply dummy text of the printing and typesetting industry.
            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -386,7 +403,7 @@
   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
   <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Message" rows="3"></textarea>
 </div>
-<button  type="button" class="btn btn-light">Send</button>
+<button  type="button" class="btn btn-light mb-4">Send</button>
                           
                           <h4 class="sub-title">contact me</h4>
                          <div class="address">
@@ -415,7 +432,15 @@
   </section> 
   </main> 
   
-  
+  <div id="particular"></div>
+
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load("particular", "particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
@@ -429,6 +454,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
    crossorigin="anonymous"></script>
-
+</div>
 </body>
 </html>

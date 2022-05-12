@@ -13,8 +13,16 @@ section {
 }
 
 body {
-  background-color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+}
+#particular {
+  position: absolute;
+  z-index: -1;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  top: 0%;
 }
 .icons {
   position: relative;
@@ -65,7 +73,7 @@ body {
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin-left: 5%;
+  margin-left: 25%;
   border-radius: 50%;
   border: 10px #817f94;
 }
@@ -94,11 +102,12 @@ h1 {
   display: flex;
   justify-content: center;
   color: #5d6280;
+  font-family: "Kaushan Script", cursive;
 }
 #head1 {
   color: #5d6280;
   position: relative;
-  left: 8%;
+  left: 12%;
   font-size: large;
   display: flex;
   flex-direction: row;
@@ -106,6 +115,7 @@ h1 {
   align-content: center;
   justify-content: center;
   align-items: center;
+  font-family: "Kaushan Script", cursive;
 }
 .icon-bar a {
   font-family: "Times New Roman", Times, serif;
@@ -165,6 +175,7 @@ a {
   background-color: #01010c;
   border-radius: 10px;
   color: white;
+  padding: 20px;
 }
 #about .details {
   margin-left: -55px;
@@ -200,6 +211,10 @@ a {
   border-radius: 50%;
   border: 5px solid;
   object-fit: cover;
+  margin-left: 80px;
+}
+#img.resta {
+  max-width: 80%;
 }
 
 #landing {
@@ -207,7 +222,7 @@ a {
   background-size: cover;
   color: #693a66;
   min-height: 100vh;
-  font-family: "Times New Roman", Times, serif;
+
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -215,6 +230,13 @@ a {
 }
 #heading-1 {
   color: #01010c;
+  font-size: 70px;
+  font-family: "Water Brush", cursive;
+}
+h2 {
+  font-family: "Kaushan Script", cursive;
+}
+#heading_2 {
   font-size: 40px;
 }
 #head1 {
@@ -384,7 +406,9 @@ ul {
   padding: 2em;
   width: 300px;
 }
-
+.card__image d {
+  max-width: 60px;
+}
 .card img {
   object-fit: cover;
   right: 100%;
@@ -411,35 +435,26 @@ ul {
   display: flex;
 }
 
-.card__content {
+/* .card__content {
   display: grid;
   margin: 1em;
   justify-content: center;
-}
+} */
 .card__title {
   font-weight: 700;
   font-family: sans-serif;
   font-size: clamp(1.3rem, 2.5vw, 1.6rem);
-  text-align: center;
+
   margin-bottom: 1em;
+  font-family: "Kaushan Script", cursive;
 }
 
-.card__text {
+/* .card__text {
   max-width: 50ch;
   color: rgba(255, 255, 255);
   margin-bottom: 1em;
-}
+} */
 
-.card__readmore {
-  text-decoration: none;
-  color: white;
-  display: inline-flex;
-  padding: 0.25em 1.15em;
-  border-radius: 0.6em;
-  width: max-content;
-  background: teal;
-  box-shadow: 0 1px 2px 0 #0003, 0 3px 7px 0 #0004, 0 8px 15px 0 #0005;
-}
 .testimonial {
   margin: 100px auto 100px;
   display: grid;
@@ -512,6 +527,7 @@ ul {
   font-weight: 600;
   text-transform: capitalize;
   margin: 0 0 25px;
+  font-family: "Kaushan Script", cursive;
 }
 .form-container .title:after {
   content: "";
@@ -529,6 +545,7 @@ ul {
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 20px;
+  font-family: "Kaushan Script", cursive;
 }
 /* .form-container .form {
   font-size: 0;
@@ -617,6 +634,11 @@ ul {
     background-color: transparent;
   }
   section {
+    margin-left: 0%;
+  }
+}
+@media (max-width: 995px) {
+  #landing {
     margin-left: 0%;
   }
 }
