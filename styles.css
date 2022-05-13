@@ -5,6 +5,11 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  /* overflow-x: hidden; */
+}
+
 section {
   min-height: 100vh;
   padding: 30px 0;
@@ -434,26 +439,31 @@ ul {
   padding: 0.5em;
   display: flex;
 }
+.but-proj {
+  display: flex;
+  justify-content: center;
+}
 
-/* .card__content {
+.card__content {
   display: grid;
   margin: 1em;
   justify-content: center;
-} */
+}
 .card__title {
   font-weight: 700;
   font-family: sans-serif;
   font-size: clamp(1.3rem, 2.5vw, 1.6rem);
-
+  display: flex;
+  justify-content: center;
   margin-bottom: 1em;
   font-family: "Kaushan Script", cursive;
 }
 
-/* .card__text {
+.card__text {
   max-width: 50ch;
   color: rgba(255, 255, 255);
   margin-bottom: 1em;
-} */
+}
 
 .testimonial {
   margin: 100px auto 100px;
@@ -464,7 +474,7 @@ ul {
 .testimonial .card {
   position: relative;
   margin: 0 auto;
-  width: 400px;
+
   background: #01010c;
   padding: 30px;
   box-sizing: border-box;
@@ -513,6 +523,11 @@ ul {
 .testimonial .card:hover .content .details span {
   color: #fff;
 }
+/* #Testimonials,
+#Projects {
+  padding-left: 10%;
+  padding-right: 10%;
+} */
 .form-container {
   background-color: #01010c;
   font-family: "Titillium Web", sans-serif;
@@ -580,10 +595,25 @@ ul {
   font-size: 30px;
   color: white;
 }
+#navicon:hover {
+  color: white;
+}
+/* #social-row {
+  margin: 0;
+} */
+div#social-link {
+  position: relative;
+  left: 80px;
+}
 @media (min-width: 768px) {
   #contact .col-md-6 {
     flex: 0 0 auto;
     width: 100%;
+  }
+}
+@media (min-width: 460px) {
+  #Testimonials {
+    flex: 0 0 auto;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -655,5 +685,9 @@ ul {
 @media (max-width: 510px) {
   .abou-info {
     flex-wrap: wrap;
+  }
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
