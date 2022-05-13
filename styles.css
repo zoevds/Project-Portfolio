@@ -5,11 +5,6 @@
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  /* overflow-x: hidden; */
-}
-
 section {
   min-height: 100vh;
   padding: 30px 0;
@@ -44,9 +39,10 @@ body {
   top: 0%;
   left: 0%;
   min-width: 25%;
-  width: 25%;
+  width: 20%;
   background-color: rgb(1, 1, 12);
   z-index: 1000;
+  height: 750px;
 }
 .content h2 {
   color: #5d6280;
@@ -55,13 +51,18 @@ body {
   color: #5d6280;
 }
 .content-nav {
+  position: fixed;
   top: 0%;
   left: 0%;
   display: flex;
   flex-wrap: wrap;
   width: 400px;
 }
+.name {
+  padding-right: 10px;
+}
 .img-name {
+  margin-left: 50px;
   width: 150px;
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +73,8 @@ body {
   width: 300px;
 }
 #img1 {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   height: 120px;
   width: 120px;
   object-fit: cover;
@@ -85,12 +87,19 @@ body {
 .som {
   color: white;
 }
+#social-link {
+  margin-left: 50px;
+}
 .social_links .fa-solid {
   padding: 1%;
   margin-left: -15%;
   font: 15px;
 }
-
+#foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #about .content {
   width: 50%;
 }
@@ -223,7 +232,7 @@ a {
 }
 
 #landing {
-  background-image: url(./background-img-2.jpg);
+  background-image: url(./images/background-img-2.jpg);
   background-size: cover;
   color: #693a66;
   min-height: 100vh;
@@ -430,8 +439,8 @@ ul {
     0 10px 13px -4px rgba(0, 0, 0, 0.23), 0 16px 20px -4px rgba(0, 0, 0, 0.36);
   overflow: hidden;
   margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
   color: white;
 }
 
@@ -482,6 +491,9 @@ ul {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
+.jsno {
+  height: 100%;
+}
 .testimonial .card .layer {
   position: absolute;
   top: calc(100% - 2px);
@@ -523,11 +535,7 @@ ul {
 .testimonial .card:hover .content .details span {
   color: #fff;
 }
-/* #Testimonials,
-#Projects {
-  padding-left: 10%;
-  padding-right: 10%;
-} */
+
 .form-container {
   background-color: #01010c;
   font-family: "Titillium Web", sans-serif;
@@ -562,13 +570,12 @@ ul {
   margin: 0 0 20px;
   font-family: "Kaushan Script", cursive;
 }
-/* .form-container .form {
+.form-container .form {
   font-size: 0;
-} */
+}
 .form-container .form .form-group {
   color: white;
   width: 50%;
-  padding: 0 8px;
   margin: 0 0 15px;
   display: inline-block;
 }
@@ -689,5 +696,10 @@ div#social-link {
   html,
   body {
     overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 370px) {
+  #testimonials {
+    width: 50%;
   }
 }
