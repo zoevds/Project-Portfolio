@@ -131,6 +131,14 @@ h1 {
   align-items: center;
   font-family: "Kaushan Script", cursive;
 }
+#head2 {
+  color: #5d6280;
+  margin-left: 40px;
+}
+#paragraph {
+  font-family: "Kaushan Script", cursive;
+  color: #5d6280;
+}
 .icon-bar a {
   font-family: "Times New Roman", Times, serif;
   margin-right: 20px;
@@ -189,7 +197,7 @@ a {
   background-color: #01010c;
   border-radius: 10px;
   color: white;
-  padding: 20px;
+  padding: 30px;
 }
 #about .details {
   margin-left: -55px;
@@ -201,7 +209,10 @@ a {
   width: 200px;
   list-style: square;
 }
-
+#pg-1 {
+  display: flex;
+  justify-content: center;
+}
 #content {
   margin-left: 20%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -217,7 +228,8 @@ a {
   justify-content: space-between;
 }
 .img-content p {
-  padding-top: 30px;
+  padding-top: 4px;
+  margin-left: 30px;
 }
 .img-content img {
   height: 200px;
@@ -225,7 +237,7 @@ a {
   border-radius: 50%;
   border: 5px solid;
   object-fit: cover;
-  margin-left: 80px;
+  margin-left: 45px;
 }
 #img.resta {
   max-width: 80%;
